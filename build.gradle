@@ -10,13 +10,9 @@ subprojects {
     mavenCentral()
     jcenter()
 
-    maven {
-      url "https://github.com/TkmTwoProjects/tkmtwo-mvn-repo/raw/master/release"
-    }
-    
   }
   
-  group = 'com.tkmtwo'
+  group = 'com.github.tkmtwo'
   version = '0.0.0'
   
   ext {
@@ -26,8 +22,8 @@ subprojects {
     //
     depVersionGuava = '27.0.1-jre'
     depVersionJackson = '2.9.8'
-    depVersionJunit = '4.11'
-    //depVersionLogback = '1.1.2'
+    depVersionJunit = '4.12'
+    depVersionLogback = '1.2.3'
     //depVersionMockito = '1.10.4'
     //depVersionSlf4J = '1.7.25'
     depVersionSpringFramework = '4.1.6.RELEASE'
@@ -36,10 +32,10 @@ subprojects {
     // Javadoc Links
     //
     javadocLinks = [
-      "http://docs.oracle.com/javase/7/docs/api/",
+      "https://docs.oracle.com/en/java/javase/11/docs/api/",
       "http://docs.spring.io/spring/docs/current/javadoc-api/",
-      "http://fasterxml.github.io/jackson-databind/javadoc/2.3.0/"
-    ] as String[]
+    "http://fasterxml.github.io/jackson-databind/javadoc/2.9.8/"
+  ] as String[]
     
   }
   
